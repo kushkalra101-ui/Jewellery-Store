@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VICTORY GEMS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;500&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --champagne-gold: #B48E5C;
+      --ivory-white: #FDFBF7;
+      --charcoal-black: #2C2C2C;
+      --rose-blush: #E8C7C8;
+      --emerald-green: #0F4C3A;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--ivory-white);
+      color: var(--charcoal-black);
+    }
+
+    header {
+      background: var(--ivory-white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--champagne-gold);
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--charcoal-black);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--champagne-gold);
+    }
+
+    .hero {
+      background: url('images/jewelry-banner.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .btn {
+      background: var(--champagne-gold);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--emerald-green);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product {
+      border: 1px solid #eee;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+      background: white;
+      border-radius: 8px;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      border-color: var(--champagne-gold);
+    }
+
+    .product h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--charcoal-black);
+    }
+
+    footer {
+      background: var(--charcoal-black);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> VICTORY GEMS</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Necklaces</a>
+      <a href="#">Rings</a>
+      <a href="#">Earrings</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Elegance That Shines</h2>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="shop" class="products">
+    <div class="product">
+      <img src="images/ring.jpg" alt="Gold Ring" width="200">
+      <h3>Golden Ring</h3>
+      <p>₹40,729</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="product">
+      <img src="images/necklace.jpg" alt="Diamond Necklace" width="200">
+      <h3>Diamond Necklace</h3>
+      <p>₹1,29,999</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <!-- Add more products here -->
+  </section>
+
+  <footer>
+    <p>&copy; 2026 VICTORY GEMS | Follow us on Instagram</p>
+  </footer>
+</body>
+</html>
